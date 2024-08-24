@@ -1,2 +1,1 @@
 FLASK_APP=chiliva.py
-FLASK_ENV=development
