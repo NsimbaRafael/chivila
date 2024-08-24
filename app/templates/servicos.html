@@ -1,0 +1,199 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+<main>
+    <!--                   MENU MOBILE                    -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="FecharNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="/home">Inicio</a>
+            <a href="/sobre">Quem somos</a>
+            <a href="">Serviços</a>
+            <a href="/localizacao">Onde estamos</a>
+
+        </div>
+    </div>
+    <div class="capa_child">
+        <img src="{{url_for ('static', filename="img/pexels-tirachard-kumtanom-112571-733856.jpg")}}" alt="">
+        <div class="texto_capa">
+            <p class="p1">Nossos serviços</p>
+        </div>
+    </div>
+
+    <div class="services_all">
+        <h2>Saiba mais sobre nossos serviços</h2>
+        <div class="services_card">
+            <div class="services_img">
+                <img src="{{url_for ('static', filename="img/pexels-lilartsy-3278757.jpg")}}" alt="">
+            </div>
+            <div class="services_content">
+                <p class="servico">Consultoria de gestão</p>
+                <p class="descricao">
+                    ✓ Conceção, detalhe e implantação de sistemas de orçamentos,
+                    custos e contabilidade; <br>
+                    ✓ Análise de balanços e avaliação contabilística das empresas;<br>
+                    ✓ Definição ou revisão de relatórios;<br>
+                    ✓ Revisões periódicas de controle de qualidade da execução da
+                    contabilidade;<br>
+                    ✓ Auxílio na elaboração de demonstrações financeiras para
+                    publicação ou para encaminhamento a terceiros (bancos, órgãos
+                    governamentais, etc.); <br>
+                    ✓ Elaboração de Relatório de Contas. <br>
+                </p>
+            </div>
+        </div>
+        <div class="services_card">
+            <div class="services_img">
+                <img src="{{url_for ('static', filename="img/pexels-lilartsy-3278757.jpg")}}" alt="">
+            </div>
+            <div class="services_content">
+                <p class="servico">Consultoria Fiscal</p>
+                <p class="descricao">
+                    ✓ Auditorias e peritagens fiscais; <br>
+                    ✓ Planeamento fiscal e tributário nacional; <br>
+                    ✓ Preparação e revisão de declarações; <br>
+                    ✓ Orientação e interpretação de atuais ou novos textos legais de
+                    Impostos;<br>
+                    ✓ Organização de dossier Fiscais.
+                </p>
+            </div>
+        </div>
+        <div class="services_card">
+            <div class="services_img">
+                <img src="{{url_for ('static', filename="img/pexels-lilartsy-3278757.jpg")}}" alt="">
+            </div>
+            <div class="services_content">
+                <p class="servico">Consultoria Financeira </p>
+                <p class="descricao">
+                    ✓ Apoio para obtenção de empréstimos;<br>
+                    ✓ Consultoria de reestruturação de encargos financeiros;<br>
+                    ✓ Consultoria sobre aplicação de excedentes de tesouraria.
+                </p>
+            </div>
+        </div>
+        <div class="services_card">
+            <div class="services_img">
+                <img src="{{url_for ('static', filename="img/pexels-lilartsy-3278757.jpg")}}" alt="">
+            </div>
+            <div class="services_content">
+                <p class="servico">Serviços de Contabilidade A gestão de entidades </p>
+                <p class="descricao">
+                    ✓ Fechamos o seu Exercício Económico; <br>
+                    ✓ Processamento e Pagamentos de Imposto; <br>
+                    ✓ Organização Contabilística da Informação; <br>
+                    ✓ Recuperação de Exercícios: <br>
+                    ✓ Assinatura de Relatórios; <br>
+                    ✓ Fecho de contas; <br>
+                    ✓ Produção de Relatórios Contabilísticos e Mapas de analise
+                    financeira; <br>
+                    ✓ Elaboração do Estudo de Viabilidade; <br>
+                    ✓ E outros de acordo a solicitação da empresa. <br>
+                </p>
+            </div>
+        </div>
+        <div class="services_card">
+            <div class="services_img">
+                <img src="{{url_for ('static', filename="img/pexels-lilartsy-3278757.jpg")}}" alt="">
+            </div>
+            <div class="services_content">
+                <p class="servico">Serviços de apoio administrativo </p>
+                <p class="descricao">
+                    ✓ Processamento de faturação, com emissão de faturas, controlo de
+                    contas correntes de clientes, controlo de inventário, emissão de
+                    recibos e envio de toda a documentação a clientes e
+                    fornecedores;<br>
+                    ✓ Utilização de aplicação informática de Gestão Comercial
+                    (Primavera ERP ou Outro Software de Gestão – Compras, vendas,
+                    stocks, pagamentos, recebimentos, bancos, etc.); <br>
+                    ✓ Elaboração e processamento de salários; <br>
+                    ✓ Inscrição de empresas e funcionários na segurança social; <br>
+                    ✓ Elaboração de declarações de rendimentos e respetivo
+                    pagamento; <br>
+                    ✓ Apoio à seleção e contratação de funcionários. <br>
+                </p>
+            </div>
+        </div>
+        <div class="services_card">
+            <div class="services_img">
+                <img src="{{url_for ('static', filename="img/pexels-lilartsy-3278757.jpg")}}" alt="">
+            </div>
+            <div class="services_content">
+                <p class="servico">Serviços de Apoio Informático
+                </p>
+                <p class="descricao">
+                    ✓ Apoio na organização da empresa para a utilização dos sistemas
+                    informáticos; <br>
+                    ✓ Acompanhamento e aconselhamento na utilização dos sistemas; <br>
+                    ✓ Formação de utilizadores; <br>
+                    ✓ Fornecimento de software de gestão; <br>
+                    ✓ Implementação e parametrização de software de gestão; <br>
+                    ✓ Implementação, estruturação, configuração e manutenção de
+                    redes informáticas; <br>
+                    ✓ Fornecimento de materiais e equipamentos para redes
+                    informáticas. <br>
+                </p>
+            </div>
+        </div>
+        <div class="services_card">
+            <div class="services_img">
+                <img src="{{url_for ('static', filename="img/pexels-lilartsy-3278757.jpg")}}" alt="">
+            </div>
+            <div class="services_content">
+                <p class="servico">Serviços de Auditoria e Revisão de Contas </p>
+                <p class="descricao">
+                    ✓ Avaliação de empresas;<br>
+                    ✓ Auditoria das demonstrações financeiras, com emissão do
+                    parecer, visando atender exigências dos Investidores, Acionistas,
+                    Bancos, Administradores, Fornecedores, etc.; <br>
+                    ✓ Auditoria de balanços para aquisição, cisão ou incorporação de
+                    empresas; <br>
+                    ✓ Auditoria operacional em Sistemas de Controle Interno,
+                    processados eletronicamente ou não, tais como: Caixa, Tesouraria,
+                    Faturação, Compras, Pessoal, etc.; <br>
+                    ✓ Peritagens contabilísticas; <br>
+                    ✓ Exames especiais para verificação de cumprimento de cláusulas
+                    contratuais ou acordos específicos; <br>
+                    ✓ Revisão de contas efetuada por um perito contabilista. <br>
+                </p>
+            </div>
+        </div>
+        <div class="services_card">
+            <div class="services_img">
+                <img src="{{url_for ('static', filename="img/pexels-lilartsy-3278757.jpg")}}" alt="">
+            </div>
+            <div class="services_content">
+                <p class="servico">Serviços de Documentação </p>
+                <p class="descricao">
+                    ✓ Pedidos de certidões comerciais, prediais e das finanças; <br>
+                    ✓ Elaboração de Actas Estatutos e outros; <br>
+                    ✓ Preenchimento de impressos diversos; <br>
+                    ✓ Intervenções Notariais na constituição de sociedade: <br>
+                    ✓ Constituição; <br>
+                    ✓ Alteração pacto social; <br>
+                    ✓ Documentação diversa.
+                </p>
+            </div>
+        </div>
+        <div class="services_card">
+            <div class="services_img">
+                <img src="{{url_for ('static', filename="img/pexels-lilartsy-3278757.jpg")}}" alt="">
+            </div>
+            <div class="services_content">
+                <p class="servico">Serviços de Recursos Humanos Prestação de serviços de Recursos
+                    Humanos nas seguintes áreas:</p>
+                <p class="descricao">
+                    ✓ Elaboração de contratos de trabalho;<br>
+                    ✓ Recrutamento e Seleção de Pessoal; <br>
+                    ✓ Elaboração de Planos de Formação interna; <br>
+                    ✓ E outros.
+                </p>
+            </div>
+        </div>
+    </div>
+    <button><a href="/sobre">Sobre nós</a></button>
+
+</main>
+
+
+
+{% endblock %}

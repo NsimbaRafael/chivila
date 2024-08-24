@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{%  block conteudo %}
+<style>
+    .local{
+        width: 100%;
+        height: 500px;
+    }
+</style>
+   <!--                   MENU MOBILE                    -->
+   <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="FecharNav()">&times;</a>
+    <div class="overlay-content">
+        <a href="/home">Home</a>
+        <a href="/sobre">Quem somos</a>
+        <a href="servicos">Serviços</a>
+        <a href="">Onde estamos</a>
+
+    </div>
+</div>
+<h2>Nossa localizacao</h2>
+<div class="local">
+
+</div>
+    <h2>Contacte-nos</h2>
+    <div class="consultoria">
+        <div class="conteudo-modal cons-container">
+            <form action="" method="post">
+                <h3>Solicitar consultoria</h3>
+                <p>Todos os campos são obrigatórios</p>
+                <div class="input_area">
+                    <input type="text" name="" id="" placeholder="nome">
+                    <input type="text" name="" id="" placeholder="Sobrenome">
+                    <input type="email" name="" id="" placeholder="Email">
+                    <input type="text" name="" id="" placeholder="Telemóvel">
+                </div>
+                <textarea name="mensagem" id="" placeholder="Assunto"></textarea>
+                <div class="btn_action">
+                    <input type="reset" value="Resetar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+    <div id="map"></div>
+
+    <script>
+        // Função de inicialização do mapa
+        function initMap() {
+            // Coordenadas da localização desejada (exemplo: São Paulo, Brasil)
+            var location = {lat: -23.550520, lng: -46.633308};
+
+            // Cria o mapa centrado na localização
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: location
+            });
+
+            // Usando google.maps.marker.AdvancedMarkerElement
+            const markerView = new google.maps.marker.AdvancedMarkerElement({
+                map: map,
+                position: location,
+            });
+        }
+    </script>
+
+    <!-- Adiciona o script do Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=SUA_API_KEY&callback=initMap" async defer></script>
+
+    {%
+        endblock %}

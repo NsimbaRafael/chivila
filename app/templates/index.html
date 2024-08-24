@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<main>
+    <!--                   MENU MOBILE                    -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="FecharNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="">Home</a>
+            <a href="/sobre">Quem somos</a>
+            <a href="servicos">Serviços</a>
+            <a href="/localizacao">Onde estamos</a>
+
+        </div>
+    </div>
+
+    <!--                   SLIDE INICIAL                    -->
+
+    <div class="capa">
+      <img src="{{url_for ('static', filename="img/pexels-lilartsy-3278757.jpg")}}" alt="">
+        <div class="texto_capa">
+            <p class="p1">A sua empresa <br>precisa ter <br>contabilidade <br>organizada</p>
+            <p class="p2">Consultoria em contabilidade, Tesouraria, RH, procedimentos administrativos, Gestão fiscal
+            </p>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Solicitar
+                consultoria agora</button>
+
+        </div>
+    </div>
+
+    <!--                  NOSSOS SERVIÇOS                    -->
+
+    <div class="servicos_container">
+        <div class="titulos_servicos">
+            <h2>Nossos serviços</h2>
+            <p>Oferecemos os melhores serviços de consultoria relacionado com o <br> crescimento de seu negócio</p>
+        </div>
+        <div class="servicos_content">
+            <div class="servicos_card">
+                <i class="fas fa-dollar-sign"></i>
+                <p class="p1">Consultoria Financeira</p>
+                <p class="p2">Apoio para obtenção de empréstimos;</p>
+                <p class="p2">Consultoria de reestruturação de encargos financeiros;</p>
+                <p class="p2">Consultoria sobre aplicação de excedentes de tesouraria. </p>
+            </div>
+            <div class="servicos_card diferente">
+                <i class="fas fa-users"></i>
+                <p class="p1">Consultoria de Gestão</p>
+                <p class="p2">Definição ou revisão de relatórios; </p>
+                <p class="p2">Análise de balanços e avaliação contabilística das empresas; </p>
+                <p class="p2">Conceção, detalhe e implantação de sistemas de orçamentos,custos e contabilidade; </p>
+            </div>
+            <div class="servicos_card">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <p class="p1">Consultoria Fiscal</p>
+                <p class="p2">Auditorias e peritagens fiscais; </p>
+                <p class="p2">Planeamento fiscal e tributário nacional; </p>
+                <p class="p2">Preparação e revisão de declarações; </p>
+            </div>
+        </div>
+    </div>
+
+    <!--                  CONTACTAR                    -->
+
+    <div class="contactar">
+        <h2>Podemos ajudar</h2>
+        <p><span>A sua empresa precisa ter contabilidade organizada</span></p>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Solicitar
+            consultoria agora</button>
+
+        <div id="id01" class="modal">
+
+            <div class="conteudo-modal animacao">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                </div>
+
+
+                <form action="" method="post">
+                    <h3>Solicitar consultoria</h3>
+                    <p>Todos os campos são obrigatórios</p>
+                    <div class="input_area">
+                        <input type="text" name="" id="" placeholder="nome">
+                        <input type="text" name="" id="" placeholder="Sobrenome">
+                        <input type="email" name="" id="" placeholder="Email">
+                        <input type="text" name="" id="" placeholder="Telemóvel">
+                    </div>
+                    <textarea name="mensagem" id="" placeholder="Assunto"></textarea>
+                    <div class="btn_action">
+                        <input type="reset" value="Resetar">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+
+    <!--                  DEPOIMENTOS                    -->
+
+
+    <div class="depoimentos">
+        <h2>Nossos clientes</h2>
+        <p>Comentários</p>
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, alias ullam quo accusantium
+                        dolore quibusdam iste odit mollitia quod saepe optio totam fugiat reiciendis amet
+                        dignissimos ipsa velit labore deserunt? Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. A maiores voluptate magni nisi suscipit libero in dicta vero quam quod minima veniam
+                        dignissimos tempora laudantium, rem nesciunt earum ab alias.</p>
+                    <div class="depoimento_img">
+                        <img src="img/pexels-kowalievska-1055691.jpg" alt="">
+                        <p class="nome">Nsimba Rafael</p>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, alias ullam quo accusantium
+                        dolore quibusdam iste odit mollitia quod saepe optio totam fugiat reiciendis amet
+                        dignissimos ipsa velit labore deserunt? Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. A maiores voluptate magni nisi suscipit libero in dicta vero quam quod minima veniam
+                        dignissimos tempora laudantium, rem nesciunt earum ab alias.</p>
+                    <div class="depoimento_img">
+                        <img src="img/pexels-olly-845457.jpg" alt="">
+                        <p class="nome">Nsimba Rafael</p>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, alias ullam quo accusantium
+                        dolore quibusdam iste odit mollitia quod saepe optio totam fugiat reiciendis amet
+                        dignissimos ipsa velit labore deserunt? Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. A maiores voluptate magni nisi suscipit libero in dicta vero quam quod minima veniam
+                        dignissimos tempora laudantium, rem nesciunt earum ab alias.</p>
+                    <div class="depoimento_img">
+                        <img src="img/pexels-kowalievska-1055691.jpg" alt="">
+                        <p class="nome">Nsimba Rafael</p>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, alias ullam quo accusantium
+                        dolore quibusdam iste odit mollitia quod saepe optio totam fugiat reiciendis amet
+                        dignissimos ipsa velit labore deserunt? Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. A maiores voluptate magni nisi suscipit libero in dicta vero quam quod minima veniam
+                        dignissimos tempora laudantium, rem nesciunt earum ab alias.</p>
+                    <div class="depoimento_img">
+                        <img src="img/pexels-olly-845457.jpg" alt="">
+                        <p class="nome">Nsimba Rafael</p>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, alias ullam quo accusantium
+                        dolore quibusdam iste odit mollitia quod saepe optio totam fugiat reiciendis amet
+                        dignissimos ipsa velit labore deserunt? Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. A maiores voluptate magni nisi suscipit libero in dicta vero quam quod minima veniam
+                        dignissimos tempora laudantium, rem nesciunt earum ab alias.</p>
+                    <div class="depoimento_img">
+                        <img src="img/pexels-kowalievska-1055691.jpg" alt="">
+                        <p class="nome">Nsimba Rafael</p>
+                    </div>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+    </div>
+
+</main>
+
+{% endblock %}
