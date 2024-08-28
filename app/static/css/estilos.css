@@ -169,15 +169,6 @@ button {
   background-color: rgba(0,0,0,0.4);  
   padding-top: 60px;
 }
-.consultoria{
-  width: 100%;
-  height: auto;
-  background-color: rgb(180, 178, 178);
-}
-.consultoria .cons-container{
-  width: 100%;
-  background: transparent;
-}
 .conteudo-modal {
   background-color: #fefefe;
   margin: 5% auto 15% auto;
@@ -331,7 +322,6 @@ h2{
   align-items: center;
   text-align: center;
   transition: ease-out .5s;
-  height: auto;
 }
 .servicos_content .diferente{
   border-top: 2px solid var(--cor10);
