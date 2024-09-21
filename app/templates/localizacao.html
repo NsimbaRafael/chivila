@@ -17,56 +17,57 @@
 
     </div>
 </div>
-<h2>Nossa localizacao</h2>
-<div class="local">
-
-</div>
-    <h2>Contacte-nos</h2>
-    <div class="consultoria">
-        <div class="conteudo-modal cons-container">
-            <form action="" method="post">
-                <h3>Solicitar consultoria</h3>
-                <p>Todos os campos são obrigatórios</p>
-                <div class="input_area">
-                    <input type="text" name="" id="" placeholder="nome">
-                    <input type="text" name="" id="" placeholder="Sobrenome">
-                    <input type="email" name="" id="" placeholder="Email">
-                    <input type="text" name="" id="" placeholder="Telemóvel">
-                </div>
-                <textarea name="mensagem" id="" placeholder="Assunto"></textarea>
-                <div class="btn_action">
-                    <input type="reset" value="Resetar">
-                    <input type="submit" value="Enviar">
-                </div>
-            </form>
-
-
+  <div class="capa_child"></div>
+        <img src="img/pexels-tirachard-kumtanom-112571-733856.jpg" alt="">
+        <div class="texto_capa">
+            <p class="p1">Quem somos?</p>
         </div>
     </div>
-    <div id="map"></div>
+<h2>Onde nos encontrar?</h2>
+<div class="contact">
+    <div class="card-contact">
+        <i class="fas fa-map-marker-alt location-icon">
+        </i>
+        <p>Kilamba Kiaxi, Rua vaidade casa nº30</p>
+    </div>
+    <div class="card-contact">
+        <i class="fa-solid fa-phone"></i>
+        <p>948 960 187</p>
+        <p>922 448 434</p>
+        <p>949 278 861</p>
 
-    <script>
-        // Função de inicialização do mapa
-        function initMap() {
-            // Coordenadas da localização desejada (exemplo: São Paulo, Brasil)
-            var location = {lat: -23.550520, lng: -46.633308};
+    </div>
+    <div class="card-contact">
+        <i class="fa-solid fa-envelope"></i>  
+        <p>chilivacontasgeral@gmail.com</p>
+    </div>
+    <div class="card-contact">
+        <p id="p1">Redes sociais</p>
+    <div class="teste">
+            <a href="https://www.instagram.com/joseafonsomastermindcontrol/" class="rd_i"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100012203371007" class="rd_i"><i class="fab fa-facebook-f"></i></a>
+            <a href="" class="rd_i"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/madalena-ntondo-002bb1303/" class="rd_i"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</div>
+<div class="formullll">
+    <div class="imagem">
+          <img src="img/sobre1.jpg" alt="">
+    </div>
+    <div class="formulario_sol">
+        <form action="" method="post">
+            <p>O quê o senhor deseja ?</p>
+            <div class="campus">
+                <input type="text" placeholder="Nome">
+                <input type="text" placeholder="Sobrenome ">
+            </div>
+            <input type="text" name="" id="" placeholder="Telemóvel">
+            <input type="email" name="" id="" placeholder="Email">
+            <textarea name="" id="" placeholder="Assunto"></textarea>
+        </form>
+    </div>
+</div>
 
-            // Cria o mapa centrado na localização
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 14,
-                center: location
-            });
-
-            // Usando google.maps.marker.AdvancedMarkerElement
-            const markerView = new google.maps.marker.AdvancedMarkerElement({
-                map: map,
-                position: location,
-            });
-        }
-    </script>
-
-    <!-- Adiciona o script do Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=SUA_API_KEY&callback=initMap" async defer></script>
-
-    {%
+<button><a href="index.html">Inicio</a></button>    {%
         endblock %}

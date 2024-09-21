@@ -66,7 +66,7 @@
   
   .servicos_content .servicos_card{
     width: 95%;
-    height: 300px;
+    height: auto;
   }
   .contactar{
     height: auto;

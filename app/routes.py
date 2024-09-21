@@ -1,5 +1,7 @@
 from app import app
 from flask import render_template, url_for, redirect
+from app.controllers.sobre import Sobre
+from app.controllers.servicos import Obter_servicos
 
 @app.route("/")
 def index():
@@ -12,11 +14,14 @@ def home():
 
 @app.route("/sobre")
 def sobre():
-    return render_template("sobre.html")
+    sobre = Sobre()
+   
+    return render_template("sobre.html", informacao = sobre)
 
 @app.route("/servicos")
 def servicos():
-    return render_template("servicos.html")
+    servicos = Obter_servicos()
+    return render_template("servicos.html", servicos=servicos), 200, {'Content-Type': 'text/html'}
 
 @app.route("/localizacao")
 def localizacao():

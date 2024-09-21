@@ -25,25 +25,8 @@
                 <img src="{{url_for ('static', filename="img/sobre1.jpg")}}" alt="">
             </div>
             <div class="sobre_text">
-                <p class="p1">Chilivacontas</p>
-                <p class="p2">A CHILIVACONTAS, Contabilidade e Consultoria, Lda., foi criada em
-                    Agosto de 2023, pelos seus representantes, que com muita experiência
-                    profissional no mercado nacional em Contabilidade e Consultoria, que
-                    após uma análise do mercado foi criada a Chilivacontas, com objectivo
-                    de oferecer ao mercado serviços profissionais de Contabilidade, ,
-                    Consultoria, Auditoria, Estudo de Viabilidade, Fiscalidade, Recursos
-                    Humanos e Formação Profissional, principalmente, voltados a pequenas,
-                    médias e grandes empresas. Desde a sua fundação, a Chilivacontas,
-                    Lda., vem aumentando a sua carteira de clientes e compromete-se a
-                    oferecer ao seu leque de clientes, um serviço de qualidade com
-                    excelentes resultados e máxima satisfação.
-                    A empresa conta com colaboradores experientes, profissionais que
-                    atuam nas áreas afins. <br> A CHILIVACONTAS - LDA apresenta de uma forma
-                    integrada todos os serviços que possam interessar a uma empresa, e tem
-                    como objetivo oferecer aos clientes:
-                    Serviços do mais elevado padrão técnico;
-                    Atendimento personalizado e constante;
-                    Preços compatíveis e competitivos no Mercado. </p>
+                <p class="p1">{{informacao.nome}}</p>
+                <p class="p2">{{informacao.desc}} </p>
             </div>
         </div>
         <div class="servicos_container">
@@ -52,32 +35,17 @@
                 <div class="servicos_card">
                     <i class="fa-solid fa-hands-helping"></i>
                     <p class="p1">Missão</p>
-                    <p class="p2">Dia-a-dia melhorar nosso atendimento, utilizando todos os recursos para
-                        suprir as necessidades dos nossos clientes de forma rápida, ágil e correta.
-                        Valorizar o potencial de cada pessoa, descobrindo, retendo e
-                        aperfeiçoando talentos de colaboradores éticos e responsáveis com a
-                        nossa missão. </p>
+                    <p class="p2">{{informacao.missao}} </p>
                 </div>
                 <div class="servicos_card diferente">
                     <i   class="fa-solid fa-gears"></i>
                     <p class="p1">Valores</p>
-                    <p class="p2">Comprometimento integrado para a satisfação do cliente;</p>
-                    <p class="p2">Gestão participativa e qualificação contínua dos Recursos Humanos; </p>
-                    <p class="p2">Criatividade para soluções personalizadas;</p>
-                    <p class="p2">Ética nos procedimentos e relações;</p>
-                    <p class="p2">Respeito aos princípios e normas constitucionais;
-                    </p>
-                    <p class="p2">Trabalhar com fé, amor, agilidade, honestidade, credibilidade;</p>
-                    <p class="p2">Determinação, transparência e responsabilidade. </p>
+                    <p class="p2">{{informacao.valores}}</p>
                 </div>
                 <div class="servicos_card">
                     <i class="fa-solid fa-rocket"></i>
                     <p class="p1">Visão</p>
-                    <p class="p2">Nos Tornarmos referência na excelência dos Serviços Prestados nas áreas
-                        de contabilidade, consultoria, Formação, auditoria, Fiscalidade e gestão
-                        de Negócios de forma a atender as necessidades dos nossos clientes,
-                        participando directamente no crescimento de cada um, com soluções
-                        atuais em gestão de negócios</p>
+                    <p class="p2">{{informacao.visao}}</p>
                 </div>
             </div>
         </div>
